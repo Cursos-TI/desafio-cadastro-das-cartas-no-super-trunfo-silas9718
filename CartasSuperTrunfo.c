@@ -49,6 +49,7 @@ int main() {
     printf("Digite o numero total de pontos turisticos: \n");
     scanf("%d", &pontosturisticos);
 
+    puts("Carta 01");
 
     printf("Estado: %s\n", Estado);
     printf("Código: %s\n", Codigodacarta);
@@ -100,6 +101,7 @@ int main() {
 
     //retorno dos valores inseridos e apresentação dos resultados
 
+    puts("Carta 02");
 
     printf("Estado: %s\n", Estado);
     printf("Código: %s\n", Codigodacarta);
@@ -110,7 +112,7 @@ int main() {
     printf("Números de pontos turísticos: %d\n", pontosturisticos);
 
 
-    // retornar aos resultados e fazer as correções necessaria
+    // retornar aos resultados e fazer as correções necessarias
 
     return 0;
 }
