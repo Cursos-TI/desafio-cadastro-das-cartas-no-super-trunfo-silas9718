@@ -9,6 +9,8 @@ int main() {
     float Area;
     float pib;
     int pontosturisticos;
+    float densidade;
+    float pibpercapita;
 
     //preparação para inserir as instruções e informações das cartas
     //definir cada atributo ao codigo da primeira carta
@@ -42,7 +44,7 @@ int main() {
     scanf("%f", &Area);
 
 
-    printf("Digite o produto interno bruto(pib): \n");
+    printf("Digite o produto interno bruto: \n");
     scanf("%f", &pib);
 
 
@@ -51,14 +53,19 @@ int main() {
 
     puts("Carta 01");
 
+    densidade = (float) População / Area;
+
+    pibpercapita = (float) pib / População;
+
     printf("Estado: %s\n", Estado);
     printf("Código: %s\n", Codigodacarta);
     printf("Nome da Cidade: %s\n", Nomdedacidade);
     printf("População: %d habitantes\n", População);
     printf("Área: %.2f Km2\n", Area);
-    printf("PIB: %.2f Milhôes de reais\n", pib);
+    printf("PIB: %.2f Bilhôes de reais\n", pib);
     printf("Números de pontos turísticos: %d\n", pontosturisticos);
-
+    printf("Densidade Populacional: %.2f  hab/km2 \n", densidade);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita);
 
     // repetir instruções para inserir a segunda carta
 
@@ -91,7 +98,7 @@ int main() {
     scanf("%f", &Area);
 
 
-    printf("Digite o produto interno bruto(pib): \n");
+    printf("Digite o produto interno bruto: \n");
     scanf("%f", &pib);
 
 
@@ -103,16 +110,22 @@ int main() {
 
     puts("Carta 02");
 
+    densidade = (float) População / Area;
+
+    pibpercapita = (float) pib / População;
+
     printf("Estado: %s\n", Estado);
     printf("Código: %s\n", Codigodacarta);
     printf("Nome da Cidade: %s\n", Nomdedacidade);
     printf("População: %d habitantes\n", População);
     printf("Área: %.2f Km2\n", Area);
-    printf("PIB: %.2f Milhôes de reais\n", pib);
+    printf("PIB: %.2f Bilhôes de reais\n", pib);
     printf("Números de pontos turísticos: %d\n", pontosturisticos);
-
+    printf("Densidade Populacional: %.2f  hab/km2 \n", densidade);
+    printf("PIB per Capita: %.2f reais\n", pibpercapita);
 
     // retornar aos resultados e fazer as correções necessarias
 
     return 0;
+    
 }
